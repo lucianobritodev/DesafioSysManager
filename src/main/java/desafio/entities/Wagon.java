@@ -5,7 +5,7 @@ import desafio.models.WagonModel;
 
 public class Wagon implements WagonModel {
 	
-	private int order;
+	private Integer order;
 	private WayWagonEnum way;
 	
 	public Wagon() {
@@ -17,7 +17,7 @@ public class Wagon implements WagonModel {
 		this.way = way;
 	}
 	
-	public int getOrder() {
+	public Integer getOrder() {
 		return order;
 	}
 	

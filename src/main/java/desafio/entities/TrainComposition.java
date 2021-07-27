@@ -11,8 +11,7 @@ public class TrainComposition implements TrainModel {
 
 	private List<WagonModel> train = new ArrayList<>();
 
-	public TrainComposition() {
-	}
+	public TrainComposition() {}
 
 	public TrainComposition(WagonModel wagon) {
 		this.train.add(wagon);
@@ -43,7 +42,7 @@ public class TrainComposition implements TrainModel {
 				System.out.println(
 						"Elemento "
 						+ wagon.getOrder()
-						+ " não pode ser removido, pois não é o primeiro da direita!");
+						+ " não pode ser removido, pois não é o primeiro vagão da direita!");
 			}
 		} else {
 			if (train.indexOf(wagon) == 0) {
@@ -52,7 +51,7 @@ public class TrainComposition implements TrainModel {
 				System.out.println(
 						"Elemento de numeração "
 						+ wagon.getOrder()
-						+ " não pode ser removido, pois não é o primeiro da esquerda!");
+						+ " não pode ser removido, pois não é o primeiro vagão da esquerda!");
 			}
 		}
 	}
