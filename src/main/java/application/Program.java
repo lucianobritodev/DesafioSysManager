@@ -29,7 +29,7 @@ public class Program {
 		
 		// Challenge Two
 		
-		Count.countNumbers(new int[] {7,5,3,1}, 6);
+		Count.countNumbers(new int[] {7,5,3,1}, 4);
 	}
 
 }
