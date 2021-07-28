@@ -15,7 +15,6 @@ public class WagonTest {
 	public void testGetOrder() {
 		Wagon wg = new Wagon(1, WayWagonEnum.LEFT);
 		wg.setOrder(10);
-		
 		assertThat(wg.getOrder(), is(10));
 	}
 	

@@ -3,7 +3,7 @@ package application;
 import desafio.entities.TrainComposition;
 import desafio.entities.Wagon;
 import desafio.enuns.WayWagonEnum;
-import desafio.services.Count;
+import desafio.util.Count;
 
 public class Program {
 
