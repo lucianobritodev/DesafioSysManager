@@ -1,9 +1,8 @@
 package desafio.entities;
 
 import desafio.enuns.WayWagonEnum;
-import desafio.models.WagonModel;
 
-public class Wagon implements WagonModel {
+public class Wagon {
 	
 	private Integer order;
 	private WayWagonEnum way;
@@ -25,11 +24,6 @@ public class Wagon implements WagonModel {
 		this.order = order;
 	}
 	
-	public void setWay(WayWagonEnum way) {
-		this.way = way;
-	}
-	
-	@Override
 	public String getWay() {
 		return way.name();
 	}
