@@ -1,5 +1,10 @@
 # DesafioSysManager
 
+## Descrição
+
+Desafio de programação Java para medir o nível de conhecimento da linguagem, suas bibliotecas e ferramentas.
+
+
 ## Desafio 1
 
 Um trem é construído atracando-se e desatracando-se vagões tanto pelo lado direito como pelo
@@ -12,6 +17,7 @@ Implemente uma classe TrainComposition que modele esse problema.
 
 - [x] Concluído!
 
+
 ## Desafio 2
 
 Implemente uma função countNumbers que aceite um array de inteiros. Essa função deve:
@@ -20,5 +26,12 @@ Implemente uma função countNumbers que aceite um array de inteiros. Essa funç
 argumento
 Exemplo: countNumbers(new int[] {1,3,5,7}, 4) deve retornar 2, porque há dois elementos no array
 menores que 4. 
+
+- [x] Concluído!
+
+
+## Implementação de Testes Unitários
+
+Implementar testes unitários
 
 - [x] Concluído!
