@@ -4,27 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 import desafio.enuns.WayWagonEnum;
-import desafio.models.TrainModel;
-import desafio.models.WagonModel;
 
-public class TrainComposition implements TrainModel {
+public class TrainComposition {
 
-	private List<WagonModel> train = new ArrayList<>();
+	private List<Wagon> train = new ArrayList<>();
 
 	public TrainComposition() {}
 
-	public TrainComposition(WagonModel wagon) {
+	public TrainComposition(Wagon wagon) {
 		this.train.add(wagon);
 	}
 
 	public void printWagons() {
-		for (WagonModel wagon : train) {
+		for (Wagon wagon : train) {
 			System.out.println(wagon + " index: " + train.indexOf(wagon));
 		}
 	}
 
-	@Override
-	public void berth(WagonModel wagon) {
+	public void berth(Wagon wagon) {
 		if (wagon.getWay().equalsIgnoreCase("LEFT")) {
 			train.add(0, wagon);
 		} else {
@@ -32,8 +29,7 @@ public class TrainComposition implements TrainModel {
 		}
 	}
 
-	@Override
-	public void unberth(WagonModel wagon, WayWagonEnum way) {
+	public void unberth(Wagon wagon, WayWagonEnum way) {
 
 		if (way.name().equalsIgnoreCase("RIGHT")) {
 			if (train.indexOf(wagon) == (train.size() - 1)) {
